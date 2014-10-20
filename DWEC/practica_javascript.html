@@ -1,0 +1,461 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Practica JavaScript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style type="text/css" media="screen">
+        .centered {
+            vertical-align: middle !important;
+        }
+    </style>
+</head>
+
+
+    <body>
+        <table class="table">
+            <tr>
+                <th> <center>Nombre</center>  </th>
+                <th> <center>Codigo</center>  </th>
+                <th> <center>Resultado</center>  </th>
+            </tr>
+            <tr>
+                <td class="centered">JS Variables   </td>
+                <td>
+<pre>
+                    &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+var x = 2;
+var y = 2;
+document.getElementById("demo").innerHTML = x + y;
+//document.getElementById("demo").innerHTML = x;
+//document.getElementById("demo").innerHTML = y;
+&lt;/script&gt;
+
+
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                </td>
+                <td class="Centered">  
+                    <script>
+var x = 2;
+var y = 2;
+var z = x+y;
+document.write(z);
+//document.getElementById("demo").innerHTML = x + y;
+//document./getElementById("demo").innerHTML = x;
+//document.getElementById("demo").innerHTML = y;
+</script>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td class="Centered">JS Data Types </td>
+                <td> 
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+   var carName1 = "Sergio Andres";
+   var carName2 = 'Ivan Martin';
+   var answer1 = "David Sancho";
+   var answer2 = "Ivan Ramos'";
+   var answer3 = 'Daniel Florido"';
+
+document.getElementById("demo").innerHTML =
+carName1 + "&lt;br&gt;" + 
+carName2 + "&lt;br&gt;" + 
+answer1 + "&lt;br&gt;" + 
+answer2 + "&lt;br&gt;" + 
+answer3;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+                    </pre>
+                </td>
+                <td class="Centered">
+                    <p id="demo"></p>
+
+                    <script>
+                    var carName1 = "Sergio Andres";
+                    var carName2 = 'Ivan Martin';
+                    var answer1 = "David Sancho";
+                    var answer2 = "Ivan Ramos'";
+                    var answer3 = 'Daniel Florido"';
+
+                    document.getElementById("demo").innerHTML =
+                    carName1 + "<br>" + 
+                    carName2 + "<br>" + 
+                    answer1 + "<br>" + 
+                    answer2 + "<br>" + 
+                    answer3;
+                    </script>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="Centered">JS Objects   </td>
+                <td> 
+
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Creating a JavaScript Object.&lt;/p&gt;
+
+&lt;p id="demo3"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+var person = {firstName:"Sergio", lastName:"Andres", age:22, eyeColor:"green"};
+
+
+document.getElementById("demo").innerHTML =
+person.firstName + " tiene " + person.age + " años.";
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+                </td>
+                <td class ="Centered"> 
+
+<p id="demo3"></p>
+
+<script>
+var person = {firstName:"Sergio", lastName:"Andres", age:22, eyeColor:"green"};
+
+document.getElementById("demo3").innerHTML =
+person.firstName + " tiene " + person.age + " años.";
+</script>  </td>
+            </tr>
+            <tr>
+                <td class="Centered">JS Functions   </td>
+                <td> 
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Este ejemplo llama auna funcion que realiza una operacion. Nos devuelve el resultado:&lt;/p&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function myFunction(a, b) {
+    return a * b;
+}
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                </td>
+                <td class ="Centered"> <p>Este ejemplo llama auna funcion que realiza una operacion. Nos devuelve el resultado:</p>
+
+<p id="demo4"></p>
+
+<script>
+function myFunction1(a, b) {
+    return a * b;
+}
+document.getElementById("demo4").innerHTML = myFunction1(4, 3);
+</script>  </td>
+            </tr>
+            <tr>
+                <td class="Centered">JS Operators   </td>
+                <td><pre> &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;y = 5, z = 2, calcula x = y + z, y muestra x:&lt;/p&gt;
+
+&lt;button onclick="myFunction()"&gt;Click aqui&lt;/button&gt;
+
+&lt;p id="demo4"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function myFunction() {
+    y = 5;
+    z = 2;
+    x = y + z;
+    document.getElementById("demo").innerHTML = x;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; </pre>   </td>
+                <td class ="Centered"> <p>y = 5, z = 2, calcula x = y + z, y muestra x:</p>
+
+<button class="btn btn-success" onclick="myFunction2()">Click aqui</button>
+
+<p id="demo5"></p>
+
+<script>
+function myFunction2() {
+    y = 5;
+    z = 2;
+    x = y + z;
+    document.getElementById("demo5").innerHTML = x;
+}
+</script>  </td>
+            </tr>
+            <tr>
+                <td class="Centered">JS Comparisons   </td>
+                <td><pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Introduce tu edad y dale al boton:&lt;/p&gt;
+
+&lt;input id="age" value="18" /&gt;
+
+&lt;button onclick="myFunction()"&gt;Click aqui&lt;/button&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function myFunction() {
+    var age,voteable;
+    age = document.getElementById("age").value;
+    voteable = (age &lt; 18) ? "Demasiado joven":"Ya puedes votar!";
+    document.getElementById("demo").innerHTML = voteable";
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;  </pre>   </td>
+                <td class="Centered"> <p>Introduce tu edad y dale al boton:</p>
+
+<input class="form-control" class="form-control" id="age" value="18" />
+
+<button class="btn btn-success"  onclick="myFunction3()">Click aqui</button>
+
+<p id="demo6"></p>
+
+<script>
+function myFunction3() {
+    var age,voteable;
+    age = document.getElementById("age").value;
+    voteable = (age < 18) ? "Demasiado joven":"Ya puedes votar!";
+    document.getElementById("demo6").innerHTML = voteable;
+}
+</script>  </td>
+            </tr>
+            <tr>
+                <td class="Centered">JS Conditions   </td>
+                <td> <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Muestra un mensaje de buenos dias si no son mas de las 20:00:&lt;/p&gt;
+
+&lt;button onclick="myFunction()"&gt;Click aqui&lt;/button&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function myFunction() {
+    if (new Date().getHours() &lt; 20) {
+        document.getElementById("demo").innerHTML = "Buenos dias!";
+    }
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;  </pre>  </td>
+                <td class =Centered><p>Muestra un mensaje de buenos dias si no son mas de las 20:00:</p>
+
+<button class="btn btn-success"  onclick="myFunction4()">Click aqui</button>
+
+<p id="demo7"></p>
+
+<script>
+function myFunction4() {
+    if (new Date().getHours() < 20) {
+        document.getElementById("demo7").innerHTML = "Buenos dias!";
+    }
+}
+</script>   </td>
+            </tr>
+            <tr>
+                <td class="Centered">JS Switch   </td>
+                <td><pre> &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Click en el boton para saber que dia es hoy:&lt;/p&gt;
+
+&lt;button onclick="myFunction()"&gt;Click aqui&lt;/button&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function myFunction() {
+    var day;
+    switch (new Date().getDay()) {
+        case 0:
+            day = "Domingo";
+            break;
+        case 1:
+            day = "Lunes";
+            break;
+        case 2:
+            day = "Martes";
+            break;
+        case 3:
+            day = "Miercoles";
+            break;
+        case 4:
+            day = "Jueves";
+            break;
+        case 5:
+            day = "Viernes";
+            break;
+        case  6:
+            day = "Sábado";
+            break;
+    }
+    document.getElementById("demo").innerHTML = "Hoy es " + day;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; </pre>   </td>
+                <td class="Centered"> <p>Click en el boton para saber que dia es hoy:</p>
+
+<button class="btn btn-success"  onclick="myFunction5()">Click aqui</button>
+
+<p id="demo8"></p>
+
+<script>
+function myFunction5() {
+    var day;
+    switch (new Date().getDay()) {
+        case 0:
+            day = "Domingo";
+            break;
+        case 1:
+            day = "Lunes";
+            break;
+        case 2:
+            day = "Martes";
+            break;
+        case 3:
+            day = "Miercoles";
+            break;
+        case 4:
+            day = "Jueves";
+            break;
+        case 5:
+            day = "Viernes";
+            break;
+        case  6:
+            day = "Sábado";
+            break;
+    }
+    document.getElementById("demo8").innerHTML = "Hoy es " + day;
+}
+</script>
+  </td>
+            </tr>
+            <tr>
+                <td class="Centered">JS Loop For   </td>
+                <td> <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+cars = ["BMW", "Volvo", "Saab", "Ford"];
+text = "";
+var i;
+for (i = 0; i &lt; cars.length; i++) {
+    text += cars[i] + "&lt;br&gt;";
+}
+
+document.getElementById("demo").innerHTML = text;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; </pre>  </td>
+                <td class ="Centered"> <p id="demo11"></p>
+
+<script>
+cars = ["BMW", "Volvo", "Saab", "Ford"];
+text = "";
+var i;
+for (i = 0; i < cars.length; i++) {
+    text += cars[i] + "<br>";
+}
+
+document.getElementById("demo11").innerHTML = text;
+</script>   </td>
+            </tr>
+            <tr>
+                <td class="Centered">JS Loop While   </td>
+                <td><pre> &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Ejemplo de un for que muestra numeros hasta el que yo quiera.&lt;/p&gt;
+
+&lt;button onclick="myFunction()"&gt;Click aqui&lt;/button&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+function myFunction() {
+    var text = "";
+    var i = 0;
+    while (i &lt; 10) {
+        text += "&lt;br&gt;Este numero es el " + i;
+        i++;
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; </pre>   </td>
+                <td class="Centered"><p>Ejemplo de un for que muestra numeros hasta el que yo quiera.</p>
+
+<button class="btn btn-success"  onclick="myFunction()">Click aqui</button>
+
+<p id="demo10"></p>
+
+<script>
+function myFunction() {
+    var text = "";
+    var i = 0;
+    while (i < 10) {
+        text += "<br>Este numero es el " + i;
+        i++;
+    }
+    document.getElementById("demo10").innerHTML = text;
+}
+</script>   </td>
+            </tr>
+
+        </table>
+
+
+
+    </body>
+
+</html>
